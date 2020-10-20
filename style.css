@@ -1,45 +1,46 @@
-header h1, section {
-    max-width: 600px;
-    margin: 0 auto;
+header h1, 
+section {
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 aside {
-    color: #666666;
+  color: #666666;
 }
 
 @font-face {
-    font-family: franklin;
-    src: url("assets/fonts/franklin-normal-700.woff"),  url('assets/fonts/franklin-normal-700.woff2'),;
-    font-weight: 400;
-
+  font-family: franklin;
+  src: url("assets/fonts/franklin-normal-700.woff"),  url('assets/fonts/franklin-normal-700.woff2');
+  font-weight: 400;
 }
+
 @font-face {
-    font-family: franklin;
-    src: url("assets/fonts/franklin-normal-300.woff"),  url('assets/fonts/franklin-normal-300.woff2'),;
-    font-weight: 300;
+  font-family: franklin;
+  src: url("assets/fonts/franklin-normal-300.woff"),  url('assets/fonts/franklin-normal-300.woff2');
+  font-weight: 300;
 }
 
 section aside {
-    max-width: 720px;
-    margin: 0 auto;
+  max-width: 720px;
+  margin: 0 auto;
 }
 
 header img, header aside {
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 section p {
-    font-size: 20px;
-    margin-bottom: 15px;
-    font-family: franklin;
-    font-weight: 300;
-    color:#333333;
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-family: franklin;
+  font-weight: 300;
+  color:#333333;
 }
