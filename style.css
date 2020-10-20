@@ -7,6 +7,18 @@ aside {
     color: #666666;
 }
 
+@font-face {
+    font-family: franklin;
+    src: url("assets/fonts/franklin-normal-700.woff"),  url('assets/fonts/franklin-normal-700.woff2'),;
+    font-weight: 400;
+
+}
+@font-face {
+    font-family: franklin;
+    src: url("assets/fonts/franklin-normal-300.woff"),  url('assets/fonts/franklin-normal-300.woff2'),;
+    font-weight: 300;
+}
+
 section aside {
     max-width: 720px;
     margin: 0 auto;
@@ -27,4 +39,7 @@ header {
 section p {
     font-size: 20px;
     margin-bottom: 15px;
+    font-family: franklin;
+    font-weight: 300;
+    color:#333333;
 }
