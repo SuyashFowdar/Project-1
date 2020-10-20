@@ -41,7 +41,6 @@ header {
 section p {
   font-size: 20px;
   margin-bottom: 15px;
-  font-family: franklin;
   font-weight: 300;
-  color:#333;
+  color: #333;
 }
