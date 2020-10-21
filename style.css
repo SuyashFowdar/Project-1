@@ -4,8 +4,14 @@ section {
   margin: 0 auto;
 }
 
-aside {
+figcaption {
   color: #666;
+  font-size: 15px;
+}
+
+figcaption span {
+  font-size: 13px;
+  color: #888;
 }
 
 @font-face {
@@ -20,16 +26,19 @@ aside {
   font-weight: 300;
 }
 
-section aside {
+section figure {
   max-width: 720px;
   margin: 0 auto;
 }
 
 header img,
-header aside {
-  max-width: 1200px;
-  width: 100%;
+header figure {
+  width: 945px;
   margin: 0 auto;
+}
+
+header figcaption {
+  width: 720px;
 }
 
 header {
