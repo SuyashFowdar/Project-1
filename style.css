@@ -3,6 +3,17 @@ section {
   max-width: 600px;
   margin: 0 auto;
 }
+nav ul {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  border-bottom: 1px solid goldenrod;
+  text-align: center;
+}
+.title-h1 {
+  flex: 1 1;
+}
+
 
 figcaption {
   color: #666;
@@ -39,6 +50,10 @@ header figure {
 
 header figcaption {
   width: 720px;
+}
+.img-div {
+max-width: 600px;
+margin: 0 auto;
 }
 
 header {
