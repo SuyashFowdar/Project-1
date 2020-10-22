@@ -1,30 +1,59 @@
-header h1,
-section > div {
-  max-width: 600px;
+@font-face {
+  font-family: franklin;
+  src: url("assets/fonts/franklin-normal-700.woff"), url('assets/fonts/franklin-normal-700.woff2');
+  font-weight: 700;
 }
 
-header,
-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
+@font-face {
+  font-family: franklin;
+  src: url("assets/fonts/franklin-normal-500.woff"), url('assets/fonts/franklin-normal-500.woff2');
+  font-weight: 500;
 }
 
-nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 100%;
-  border-bottom: 1px solid goldenrod;
-  text-align: center;
-  position: fixed;
-  background-color: #fff;
-  top: 0;
-  left: 0;
+@font-face {
+  font-family: franklin;
+  src: url("assets/fonts/franklin-normal-300.woff"), url('assets/fonts/franklin-normal-300.woff2');
+  font-weight: 300;
 }
 
-nav button {
+@font-face {
+  font-family: cheltenham;
+  src: url("assets/fonts/cheltenham-italic-700.woff2");
+  font-style: italic;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: cheltenham;
+  src: url("assets/fonts/cheltenham-normal-700.woff"), url("assets/fonts/cheltenham-normal-700.woff2");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: cheltenham;
+  src: url("assets/fonts/cheltenham-normal-400.woff"), url("assets/fonts/cheltenham-normal-400.woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: cheltenham-small;
+  src: url("assets/fonts/cheltenham-small-normal-400.woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: cheltenham;
+  src: url("assets/fonts/cheltenham-normal-500.woff"), url("assets/fonts/cheltenham-normal-500.woff2");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: imperial;
+  src: url("assets/fonts/imperial-normal-400.woff2");
+  font-weight: 400;
+}
+
+button {
   border-radius: 3px;
   cursor: pointer;
   white-space: nowrap;
@@ -41,28 +70,90 @@ nav button {
   text-transform: uppercase;
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+footer > div {
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #666;
+}
+
+footer a {
+  text-decoration: none;
+  color: #666;
+  font-family: franklin, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 11px;
+  margin: 10px;
+}
+
+.after-main-content > div {
+  display: flex;
+  align-items: center;
+  width: 600px;
+}
+
+.col-1 > section,
+.col-2 {
+  border-top: 2px solid #000;
+}
+
+.see-more a {
+  text-decoration: none;
+  color: #000;
+}
+
+.title-h1 svg {
+  width: 195px;
+}
+
+.before-footer header svg {
+  width: 184px;
+}
+
+.before-footer > div {
+  display: flex;
+  width: 1200px;
+  justify-content: space-between;
+}
+
+.col-2 a {
+  font-size: 1.1875rem;
+  padding: 15px 0;
+  color: rgb(18, 18, 18);
+  border-top: 1px solid rgb(226, 226, 226);
+}
+
+header h1,
+section.main-content > div {
+  max-width: 600px;
+}
+
+aside header h1 {
+  font-family: cheltenham, Georgia, 'Times New Roman', Times, serif;
+  font-weight: 700;
+  font-size: 20px;
+  font-style: normal;
+  margin: 0;
+}
+
 .title-h1 {
   flex: 1 1;
 }
 
-nav div svg {
-  width: 16px;
-}
-
-nav div {
-  padding: 9px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #000;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
 .icon-container address {
-  font-weight: bold;
+  font-family: franklin, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-style: normal;
   margin-bottom: 15px;
+}
+
+.icon-container address a {
+  text-decoration: none;
 }
 
 .icon-container {
@@ -73,6 +164,10 @@ nav a {
 }
 
 .icon-container time {
+  font-family: franklin, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  color: #333;
+  font-size: 13px;
   flex: 1 1;
 }
 
@@ -84,7 +179,7 @@ nav a {
   flex-wrap: nowrap;
 }
 
-.social-icons {
+.social-icon {
   margin: 0 10px;
 }
 
@@ -93,34 +188,16 @@ article {
   padding-top: 3.75rem;
 }
 
-.title-h1 svg {
-  width: 195px;
-}
-
-figcaption {
+article figcaption {
+  font-family: imperial, Georgia, 'Times New Roman', Times, serif;
+  font-weight: 400;
   color: #666;
   font-size: 15px;
 }
 
-figcaption span {
+article figcaption span {
   font-size: 13px;
   color: #888;
-}
-
-@font-face {
-  font-family: franklin;
-  src: url("assets/fonts/franklin-normal-700.woff"), url('assets/fonts/franklin-normal-700.woff2');
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: franklin;
-  src: url("assets/fonts/franklin-normal-300.woff"), url('assets/fonts/franklin-normal-300.woff2');
-  font-weight: 300;
-}
-
-section figure {
-  max-width: 720px;
 }
 
 header img,
@@ -136,25 +213,12 @@ header figcaption {
   max-width: 600px;
 }
 
-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-section p {
-  font-size: 20px;
-  margin-bottom: 15px;
-  font-weight: 300;
-  color: #333;
-}
-
 aside {
   display: flex;
   justify-content: center;
 }
 
-aside article img {
+aside img {
   width: 100%;
 }
 
@@ -163,18 +227,43 @@ aside article {
   width: 945px;
 }
 
-aside article .text-container {
+aside header p {
+  font-family: cheltenham, Georgia, 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0;
+  line-height: 1.125rem;
+}
+
+.after-main-content p {
+  width: 600px;
+  font-size: 12px;
+  font-family: franklin, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  color: #666;
+}
+
+aside .text-container {
   position: absolute;
   top: 115px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   margin: 10px;
 }
 
 aside .text-container p {
   font-size: 14px;
-  width: 25%;
+  font-family: franklin, Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  width: 23.5%;
   margin-top: 144px;
+  color: #000;
+}
+
+aside .text-container p strong {
+  font-size: 11px;
+  letter-spacing: 0.05em;
 }
 
 .see-more {
@@ -183,29 +272,29 @@ aside .text-container p {
   margin-top: 20px;
 }
 
-.see-more a {
-  text-decoration: none;
-  color: #000;
+nav.top-bar div {
+  padding: 9px;
 }
 
 .col-1 {
   flex: 1 1;
 }
 
-.col-1 > div,
-.col-2 {
-  border-top: 2px solid #000;
-}
-
-.col-1 > div > div {
+.col-1 > section > div {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.col-1 > div > div > div {
+.col-1 > section > div > div {
   width: 32%;
   padding-bottom: 20px;
+}
+
+.col-1 > section a > div {
+  font-family: cheltenham, Georgia, 'Times New Roman', Times, serif;
+  font-weight: 500;
+  font-size: 18px;
 }
 
 .col-1 figure {
@@ -217,11 +306,15 @@ aside .text-container p {
   justify-content: flex-end;
   font-size: 10px;
   color: #999;
+  font-family: cheltenham-small, Georgia, 'Times New Roman', Times, serif;
+  font-weight: 400;
 }
 
 .col-1 time {
   font-size: 12px;
   color: #999;
+  font-family: franklin, Arial, Helvetica, sans-serif;
+  font-weight: 500;
 }
 
 .col-1 img {
@@ -235,14 +328,138 @@ aside .text-container p {
   flex-direction: column;
 }
 
-.col-2 a {
-  font-size: 1.1875rem;
-  padding: 15px 0;
-  color: rgb(18, 18, 18);
-  border-top: 1px solid rgb(226, 226, 226);
+.after-main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-nav a:hover {
+.after-main-content .space {
+  flex: 1 1;
+}
+
+.after-main-content p a {
+  color: #666;
+}
+
+.after-main-content button {
+  width: 330px;
+}
+
+nav.top-bar div svg {
+  width: 16px;
+}
+
+nav.top-bar a {
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav.top-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.before-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 9px;
+}
+
+.before-footer header {
+  width: 1200px;
+  border-top: 4px double #e2e2e2;
+  padding: 5px 0;
+  display: flex;
+  align-items: flex-end;
+}
+
+.before-footer header a {
+  flex: 1 1;
+  text-align: right;
+  color: #567b95;
+  font-size: 11px;
+  font-family: franklin, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.before-footer section {
+  display: flex;
+  flex-direction: column;
+}
+
+.before-footer section a {
+  height: 23px;
+  font-size: 14px;
+  font-family: franklin, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  color: #000;
+  text-decoration: none;
+}
+
+.before-footer section h3 {
+  font-size: 13px;
+  font-family: franklin, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  color: #333;
+}
+
+.before-footer section:last-child {
+  border-left: 1px solid rgb(226, 226, 226);
+  padding-left: 15px;
+}
+
+header.main h1 {
+  font-family: cheltenham, Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: 700;
+  color: #121212;
+  font-size: 40px;
+}
+
+header.main,
+section.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+section.main-content figure {
+  max-width: 720px;
+}
+
+nav.top-bar a.space-cosmos {
+  font-family: franklin, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 14.25px;
+  letter-spacing: 0.7px;
+}
+
+section.main-content > div p {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-family: imperial, Georgia, 'Times New Roman', Times, serif;
+  font-weight: 400;
+  color: #333;
+}
+
+nav a:hover,
+footer a:hover,
+.before-footer section a:hover {
   text-decoration: underline;
 }
 
