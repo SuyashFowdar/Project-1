@@ -70,6 +70,14 @@ button {
   text-transform: uppercase;
 }
 
+figure {
+  margin: 0;
+}
+
+iframe {
+  border: 0;
+}
+
 footer {
   display: flex;
   justify-content: center;
@@ -128,12 +136,22 @@ footer a {
   border-top: 1px solid rgb(226, 226, 226);
 }
 
+header img,
+header figure {
+  width: 945px;
+}
+
+.col-1 figure {
+  margin: 0;
+}
+
 header h1,
+section.main-content figure,
 section.main-content > div {
   max-width: 600px;
 }
 
-aside header h1 {
+aside header h2 {
   font-family: cheltenham, Georgia, 'Times New Roman', Times, serif;
   font-weight: 700;
   font-size: 20px;
@@ -168,7 +186,6 @@ aside header h1 {
   font-weight: 500;
   color: #333;
   font-size: 13px;
-  flex: 1 1;
 }
 
 .icon-div {
@@ -181,6 +198,13 @@ aside header h1 {
 
 .social-icon {
   margin: 0 10px;
+}
+
+.social-icon-list {
+  flex: 1 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 article {
@@ -198,11 +222,6 @@ article figcaption {
 article figcaption span {
   font-size: 13px;
   color: #888;
-}
-
-header img,
-header figure {
-  width: 945px;
 }
 
 header figcaption {
@@ -295,10 +314,6 @@ nav.top-bar div {
   font-family: cheltenham, Georgia, 'Times New Roman', Times, serif;
   font-weight: 500;
   font-size: 18px;
-}
-
-.col-1 figure {
-  margin: 0;
 }
 
 .col-1 figcaption {
@@ -436,10 +451,6 @@ section.main-content {
   flex-direction: column;
   align-items: center;
   width: 100%;
-}
-
-section.main-content figure {
-  max-width: 720px;
 }
 
 nav.top-bar a.space-cosmos {
