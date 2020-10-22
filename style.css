@@ -53,6 +53,10 @@
   font-weight: 400;
 }
 
+svg {
+  cursor: pointer;
+}
+
 button {
   border-radius: 3px;
   cursor: pointer;
@@ -361,7 +365,7 @@ nav.top-bar div {
   width: 330px;
 }
 
-nav.top-bar div svg {
+nav.top-bar div:not(.title-h1) svg {
   width: 16px;
 }
 
