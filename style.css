@@ -211,19 +211,19 @@ aside header h2 {
   align-items: center;
 }
 
-article {
+main {
   margin-top: 48px;
   padding-top: 3.75rem;
 }
 
-article figcaption {
+main figcaption {
   font-family: imperial, Georgia, 'Times New Roman', Times, serif;
   font-weight: 400;
   color: #666;
   font-size: 15px;
 }
 
-article figcaption span {
+main figcaption span {
   font-size: 13px;
   color: #888;
 }
