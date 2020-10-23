@@ -103,6 +103,11 @@ footer a {
   margin: 10px;
 }
 
+.aside-div a {
+  color: #000;
+  text-decoration: none;
+}
+
 .after-main-content > div {
   display: flex;
   align-items: center;
@@ -147,6 +152,18 @@ header figure {
 
 .col-1 figure {
   margin: 0;
+}
+
+aside article {
+  position: relative;
+  width: 945px;
+}
+
+.aside-div figure {
+  display: flex;
+  margin: 20px auto;
+  align-items: center;
+  width: 100%;
 }
 
 header h1,
@@ -245,11 +262,6 @@ aside img {
   width: 100%;
 }
 
-aside article {
-  position: relative;
-  width: 945px;
-}
-
 aside header p {
   font-family: cheltenham, Georgia, 'Times New Roman', Times, serif;
   font-weight: 400;
@@ -268,7 +280,7 @@ aside header p {
 
 aside .text-container {
   position: absolute;
-  top: 115px;
+  top: 75px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -280,7 +292,7 @@ aside .text-container p {
   font-family: franklin, Arial, Helvetica, sans-serif;
   font-weight: 300;
   width: 23.5%;
-  margin-top: 100px;
+  margin-top: 140px;
   color: #000;
 }
 
@@ -325,7 +337,7 @@ nav.top-bar div {
   justify-content: flex-end;
   font-size: 10px;
   color: #999;
-  font-family: cheltenham-small, Georgia, 'Times New Roman', Times, serif;
+  font-family: cheltenham, Georgia, 'Times New Roman', Times, serif;
   font-weight: 400;
 }
 
@@ -397,6 +409,13 @@ nav.top-bar {
   margin-bottom: 9px;
 }
 
+.aside-div h3 {
+  font-family: cheltenham, Georgia, 'Times New Roman', Times, serif;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 500;
+}
+
 .before-footer header {
   width: 1200px;
   border-top: 4px double #e2e2e2;
@@ -456,58 +475,41 @@ section.main-content {
   align-items: center;
   width: 100%;
 }
+
 .aside-div {
   display: flex;
   justify-content: flex-end;
   width: 100%;
   position: absolute;
-  
+}
 
-}
-.aside-div a {
-  color: #000;
-  text-decoration: none;
-}
-.aside-div figure {
-  display: flex;
-  margin: 20px auto;
-  align-items: center;
-  width:100%;
-}
 .editor-pick {
-  width: 210px
+  width: 210px;
 }
 
 .aside-div img {
- width: 75px;
- height: auto;
+  width: 75px;
+  height: auto;
 }
+
 .aside-div figcaption {
-  display: inline-flex;;
-border-bottom: medium none;
-padding-bottom: 0px;
-width: 125px;
-margin-left: 10px;
-
-}
-.aside-div h3 {
-  font-family: cheltenham;
-  font-size: 14px;
-  line-height: 17px;
-  font-weight: 500;
-  
+  display: inline-flex;
+  border-bottom: medium none;
+  padding-bottom: 0;
+  width: 125px;
+  margin-left: 10px;
 }
 
-.aside-div  h2 {
+.aside-div h2 {
   font-weight: 700;
-color: rgb(0, 0, 0);
-border-bottom: 1px solid rgb(226, 226, 226);
-margin-top: 0px;
-margin-bottom: 15px;
-padding-bottom: 12px;
-font-size: 14px;
-line-height: 14px;
-letter-spacing: 0.02em;
+  color: rgb(0, 0, 0);
+  border-bottom: 1px solid rgb(226, 226, 226);
+  margin-top: 0;
+  margin-bottom: 15px;
+  padding-bottom: 12px;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.02em;
 }
 
 nav.top-bar a.space-cosmos {
