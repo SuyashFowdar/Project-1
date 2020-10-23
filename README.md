@@ -4,7 +4,7 @@
 
 ## ScreenShot
 
-Screenshot : [Screenshot of the new York Times Page](assets/img/screenshot.png)
+Screenshot: [Screenshot of the new York Times Page](./assets/img/screenshot.png)
 ![Alt text](/../<positioning_floating>/assets/img/screenshot.png?raw=true "Optional Title")
 
 ## Description
