@@ -57,6 +57,7 @@ svg {
   cursor: pointer;
 }
 
+.button,
 button {
   border-radius: 3px;
   cursor: pointer;
@@ -82,9 +83,17 @@ iframe {
   border: 0;
 }
 
-footer {
-  display: flex;
-  justify-content: center;
+details {
+  width: 600px;
+  margin-top: 10px;
+}
+
+details summary {
+  cursor: pointer;
+}
+
+details summary:focus {
+  outline: 0;
 }
 
 footer > div {
@@ -92,6 +101,54 @@ footer > div {
   display: flex;
   justify-content: center;
   border-top: 1px solid #666;
+}
+
+form > div {
+  margin: 10px 0;
+}
+
+form > div > div {
+  display: flex;
+  margin-top: 5px;
+}
+
+.after-main-content > div {
+  display: flex;
+  align-items: center;
+  width: 600px;
+}
+
+.before-footer > div {
+  display: flex;
+  width: 1200px;
+  justify-content: space-between;
+}
+
+form > div:not(:nth-child(5)) {
+  display: flex;
+  flex-direction: column;
+}
+
+form > div:last-child {
+  align-items: center;
+}
+
+form > div > div > label {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+form > div:last-child > .button {
+  width: 300px;
+}
+
+form textarea {
+  resize: none;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
 }
 
 footer a {
@@ -103,15 +160,18 @@ footer a {
   margin: 10px;
 }
 
+.comment-container {
+  display: flex;
+  justify-content: center;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
 .aside-div a {
   color: #000;
   text-decoration: none;
-}
-
-.after-main-content > div {
-  display: flex;
-  align-items: center;
-  width: 600px;
 }
 
 .col-1 > section,
@@ -130,12 +190,6 @@ footer a {
 
 .before-footer header svg {
   width: 184px;
-}
-
-.before-footer > div {
-  display: flex;
-  width: 1200px;
-  justify-content: space-between;
 }
 
 .col-2 a {
