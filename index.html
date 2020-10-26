@@ -197,6 +197,51 @@
         </div>
       </div>
     </div>
+    <div class="comment-container">
+      <details>
+        <summary>Leave a comment</summary>
+        <form name="comment">
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+          </div>
+          <div>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email">
+          </div>
+          <div>
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment" cols="50" rows="5" maxlength="250" placeholder="Leave your comment here..."></textarea>
+          </div>
+          <div>
+            <label for="opinion">What is your overall opinion about this article?</label>
+            <div>
+              <label>
+                <input type="radio" name="opinion" value="positive">
+                Positive
+              </label>
+              <label>
+                <input type="radio" name="opinion" value="negative">
+                Negative
+              </label>
+              <label>
+                <input type="radio" name="opinion" value="neutral">
+                Neutral
+              </label>
+            </div>
+          </div>
+          <div>
+            <label class="clickable">
+              <input type="checkbox" name="subscribe" value="subscribe">
+              I want to subscribe to the newsletter.
+            </label>
+          </div>
+          <div>
+            <input type="submit" value="Send" class="button">
+          </div>
+        </form>
+      </details>
+    </div>
     <div class="see-more">
       <div class="col-1">
         <section class="space-astronomy">
