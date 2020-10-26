@@ -112,6 +112,11 @@ form > div > div {
   margin-top: 5px;
 }
 
+details,
+form textarea {
+  font-family: franklin, Arial, Helvetica, sans-serif;
+}
+
 .after-main-content > div {
   display: flex;
   align-items: center;
