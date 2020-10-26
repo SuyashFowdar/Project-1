@@ -202,16 +202,16 @@
         <summary>Leave a comment</summary>
         <form name="comment">
           <div>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
+            <label for="name">Name*</label>
+            <input type="text" id="name" name="name" required>
           </div>
           <div>
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email">
+            <label for="email">E-mail*</label>
+            <input type="email" id="email" name="email" required>
           </div>
           <div>
-            <label for="comment">Comment:</label>
-            <textarea id="comment" name="comment" cols="50" rows="5" maxlength="250" placeholder="Leave your comment here..."></textarea>
+            <label for="comment">Comment*</label>
+            <textarea id="comment" name="comment" cols="50" rows="5" maxlength="250" placeholder="Leave your comment here..." required></textarea>
           </div>
           <div>
             <label for="opinion">What is your overall opinion about this article?</label>
